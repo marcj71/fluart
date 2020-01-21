@@ -186,7 +186,7 @@ acceptable.
 ## Simulation
 
 A testbench is supplied in <tt>fluart_tb.vhdl</tt>. <tt>rxd</tt> and
-<tt>rxd</tt> are tied together. First, a single byte is transmitted &
+<tt>txd</tt> are tied together. First, a single byte is transmitted &
 received, then a break. Use your preferred simulator. For
 [GHDL](http://ghdl.free.fr/), the following commands are sufficient:
 
