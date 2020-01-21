@@ -25,10 +25,9 @@ featureless UART_ or <tt>fluart</tt>. Look at all the features it
     multiple times per bit period and use majority voting to decide whether
     the bit was high or low. Some may even infer the baud rate based on the
     timing of the edges.
-
-    In embedded systems, the designer is usually in full control of the data
-    path. Noise, voltage levels and timing present no problems when modern
-    signal integrity techniques are used.</dd>
+    <br>In embedded systems, the designer is usually in full control of the
+    data path. Noise, voltage levels and timing present no problems when
+    modern signal integrity techniques are used.</dd>
 
 <dt>No parity support</dt>
 <dd>The RS-232 standard allows for a parity bit that can be added to each
@@ -169,8 +168,7 @@ port (
 <dd>If all received data bits are low and the stop bit is low as well, the break
     detector is activated. When <tt>BRK_LEN</tt> low bits have passed,
     <tt>rx_brk</tt> will be high for one clock cycle.
-
-    If not all data bits were low, but the stop bit was low, or if a low
+    <br>If not all data bits were low, but the stop bit was low, or if a low
     pulse on <tt>rxd</tt> did not last at least <tt>BRK_LEN</tt> bit
     periods, <tt>rx_err</tt> will be set high for one clock cycle. The
     received data is available on <tt>rx_data</tt> for inspection.</dd>
